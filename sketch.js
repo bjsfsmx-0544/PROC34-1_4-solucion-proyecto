@@ -26,7 +26,7 @@ function setup() {
   button = createImg('click.png');
 button.position(20,30);
 button.size(50,50);
-button.mouseClicked(blow);
+button.mouseClicked(blow); // Respuesta
 }
 
 function draw() {
@@ -39,5 +39,5 @@ function draw() {
 }
 
 function blow() {
-  Matter.Body.applyForce(ball.body, { x: 0, y: 0 }, { x: 0, y: 0.05 });
+  Matter.Body.applyForce(ball.body, { x: 0, y: 0 }, { x: 0, y: 0.05 }); // Respuesta
 }
